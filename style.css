@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+
+:root {
+    /* Colors */
+
+    /* Primary */
+    --color-strong-cyan: hsl(171, 66%, 44%);
+    --color-light-blue: hsl(233, 100%, 69%);
+
+    /* Neutral */
+    --color-dark-grayish-blue: hsl(210, 10%, 33%);
+    --color-grayish-blue: hsl(201, 11%, 66%);
+
+    /* Typography */
+
+    /* Body Copy */
+    --font-size-body: 18px;
+
+    /* Fonts */
+    --font-family-bai-jamjuree: 'Bai Jamjuree', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-semibold: 600;
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+body {
+    font-family: var(--font-family-bai-jamjuree);
+}
+
+.header {
+    background-image: url(/images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.header__logo {
+    margin-top: 150px;
+}
+
+.header__title {
+    font-size: 2rem;
+    margin-top: 75px;
+    font-weight: var(--font-weight-semibold);
+    padding: 0 20px;
+}
+
+.header__text {
+    padding: 20px 25px;
+    font-size: 17px;
+    line-height: 1.5rem;
+    margin-bottom: 25px;
+    color: var(--color-grayish-blue);
+}
+
+.header__buttons {
+    display: flex;
+
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    padding: 30px;
+}
+
+.primary-btn {
+    border: none;
+    border-radius: 30px;
+    padding:20px 30px;
+    background:var(--color-light-blue);
+    box-shadow: 0px -1px 1px 1px var(--color-grayish-blue) inset;
+    color: white ;
+    font-size: 1.125rem;
+}
+.green {
+    background-color: var(--color-strong-cyan);
+}
+
+p{
+    font-size: 17px;
+    color: var(--color-grayish-blue);
+    line-height: 1.5rem;
+}
+.clipboard{
+    padding: 25px;
+    text-align: center;
+
+}
+@media screen and (min-width:375px) {
+
+
+    .header {
+        background-image: url(/images/bg-header-desktop.png);
+        
+    }
+    .header__infos{
+        max-width: 40%;
+        background: red;
+    }
+    .header__buttons{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
