@@ -137,33 +137,48 @@ p {
     margin-bottom: 50px;
 }
 
-.clipboard__intro__options{
+.clipboard__intro__options {
     margin-top: 50px;
-    
+
 }
 
 .clipboard__intro__option {
     margin-top: 25px;
     display: flex;
+    align-items: center;
     flex-direction: column;
     gap: 25px;
 }
 
-.clipboard__intro__option-title{
+.clipboard__intro__option-title {
     color: var(--color-dark-grayish-blue);
     font-weight: var(--font-weight-semibold);
     font-size: 1.5rem;
 }
 
-.clipboard__services{
+.clipboard__services {
     margin-top: 200px;
 }
-.clipboard__services-text{
+
+.clipboard__services-text {
     margin-top: 25px;
 }
-.clipboard__services-img{
+
+.clipboard__services-img {
     margin-top: 50px;
 }
+
+.socials {
+    
+    margin-top: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    min-width: 100%;
+}
+
 @media screen and (min-width:375px) {
 
 
@@ -174,7 +189,7 @@ p {
 
     .header__infos {
         max-width: 40%;
-        
+
     }
 
     .header__buttons {
@@ -182,7 +197,8 @@ p {
         justify-content: center;
         align-items: center;
     }
-    .clipboard__intro__main{
+
+    .clipboard__intro__main {
         display: flex;
         position: relative;
         align-items: center;
@@ -192,19 +208,26 @@ p {
         overflow: hidden;
         min-height: 600px;
     }
+
     .clipboard__intro__main img {
-        flex:1;
+        flex: 1;
         position: absolute;
         top: 10px;
         left: -30px;
         z-index: -1;
-        
+
     }
 
-    .clipboard__intro__options{
+    .clipboard__intro__options {
         width: 500px;
         display: flex;
         flex-direction: column;
+
+    }
+    .socials {
+    
         
+        flex-direction: row;
+       
     }
 }
