@@ -58,6 +58,8 @@ select {
 
 body {
     font-family: var(--font-family-bai-jamjuree);
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .header {
@@ -69,6 +71,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-bottom: 150px;
 }
 
 .header__logo {
@@ -79,7 +82,7 @@ body {
     font-size: 2rem;
     margin-top: 75px;
     font-weight: var(--font-weight-semibold);
-    padding: 0 20px;
+    padding: 0 15px;
 }
 
 .header__text {
@@ -102,40 +105,106 @@ body {
 .primary-btn {
     border: none;
     border-radius: 30px;
-    padding:20px 30px;
-    background:var(--color-light-blue);
+    padding: 20px 30px;
+    background: var(--color-light-blue);
     box-shadow: 0px -1px 1px 1px var(--color-grayish-blue) inset;
-    color: white ;
+    color: white;
     font-size: 1.125rem;
 }
+
 .green {
     background-color: var(--color-strong-cyan);
 }
 
-p{
+p {
     font-size: 17px;
     color: var(--color-grayish-blue);
     line-height: 1.5rem;
 }
-.clipboard{
+
+.clipboard {
     padding: 25px;
     text-align: center;
 
+}
+
+.clipboard__intro-title {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+}
+
+.clipboard__intro-text {
+    margin-bottom: 50px;
+}
+
+.clipboard__intro__options{
+    margin-top: 50px;
+    
+}
+
+.clipboard__intro__option {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.clipboard__intro__option-title{
+    color: var(--color-dark-grayish-blue);
+    font-weight: var(--font-weight-semibold);
+    font-size: 1.5rem;
+}
+
+.clipboard__services{
+    margin-top: 200px;
+}
+.clipboard__services-text{
+    margin-top: 25px;
+}
+.clipboard__services-img{
+    margin-top: 50px;
 }
 @media screen and (min-width:375px) {
 
 
     .header {
         background-image: url(/images/bg-header-desktop.png);
+
+    }
+
+    .header__infos {
+        max-width: 40%;
         
     }
-    .header__infos{
-        max-width: 40%;
-        background: red;
-    }
-    .header__buttons{
+
+    .header__buttons {
         flex-direction: row;
         justify-content: center;
         align-items: center;
+    }
+    .clipboard__intro__main{
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0px 150px;
+        border: 1px solid red;
+        overflow: hidden;
+        min-height: 600px;
+    }
+    .clipboard__intro__main img {
+        flex:1;
+        position: absolute;
+        top: 10px;
+        left: -30px;
+        z-index: -1;
+        
+    }
+
+    .clipboard__intro__options{
+        width: 500px;
+        display: flex;
+        flex-direction: column;
+        
     }
 }
